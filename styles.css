@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #0c2344;
+    padding: 2rem 3rem;
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > h1{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    gap: 3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(235, 154, 154);
+}
+
+.nav-links > button{
+    padding: 9px 29px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.nav-links > button:hover{
+    color: rgb(235, 154, 154);
+    border: 1px solid rgb(235, 154, 154);
+}
