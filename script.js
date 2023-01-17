@@ -68,7 +68,17 @@ function changeStatus(code){
     }
     else
     {
-        
+        firebase.database().ref('TaskList/'+code).update({
+            status : "pending"
+        })
+        document.getElementById(code).querySelector("#done").style.color = "gray";
+        document.getElementById(code).querySelector("#editbtn").disabled = false;
+        if (document.getElementById(code).querySelector("#editbtn").style.removeProperty) {
+            document.getElementById(code).querySelector("#editbtn").style.removeProperty('background-color');
+        } else {
+            document.getElementById(code).querySelector("#editbtn").style.removeAttribute('background-color');
+        }
+        document.getElementById(code).querySelector("#status").innerHTML = "";
     }
     
 }
