@@ -41,6 +41,37 @@ window.addEventListener("load",function(){
     
 })
 
+// Function to change the status of a task -> whether the task is pending or complete
+// Features :- 
+// change the color from gray to green and vice versa for tick mark on the extreme right side
+// change the color and disabled attribute for edit button
+// show or hide the innerHTML of element with status id
+
+
+function changeStatus(code){
+    var status;
+    firebase.database().ref('TaskList/'+code).on('value', function(snapshot){
+        status = snapshot.val().status;
+    });
+
+    if(status === "pending")
+    {
+        firebase.database().ref('TaskList/'+code).update({
+            status : "completed"
+        })
+        document.getElementById(code).querySelector("#done").style.color = "#00b200";
+        document.getElementById(code).querySelector("#editbtn").disabled = true;
+        document.getElementById(code).querySelector("#editbtn").style.backgroundColor = "rgba(116, 116, 116, 0.671)";
+        document.getElementById(code).querySelector("#status").innerHTML = `
+            <i class="far fa-check-circle"></i> Completed
+            `;
+    }
+    else
+    {
+        
+    }
+    
+}
 // Reads the data from the form -> updates it in the database -> clears the fields, deletes update and cancel btns and adds the add btn
 // -> display the updated info in the tasks bar
 function updateData(c){
