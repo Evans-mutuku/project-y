@@ -18,6 +18,28 @@ const firebaseConfig = {
 
 firebaseConfig.initializeApp(firebaseConfig)
 
+// Listening to load event on window
+// Reading the number of tasks stored in the database
+var totalItems;
+var maxCode;
+var code;
+window.addEventListener("load",function(){
+    console.log("Complete Window LOADED");
+    firebase.database().ref('TotalTasks').on('value', function(snapshot){
+        totalItems = snapshot.val().totalItems;
+        maxCode = snapshot.val().maxCode;
+        console.log("The total Items are : " + totalItems);
+        if(totalItems > 0 && document.getElementById("info") != null){
+            document.getElementById("info").remove();
+        }
+        if(totalItems === 0){
+            firebase.database().ref('TotalTasks').update({
+                maxCode : 0
+            })
+        }
+    });
+    
+})
 
 // Reads the data from the form -> updates it in the database -> clears the fields, deletes update and cancel btns and adds the add btn
 // -> display the updated info in the tasks bar
