@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>PLP TAKS MANAGEMENT WEBSITE</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <div class="logo">
                 <h1>PLP</h1>
@@ -23,7 +26,29 @@
                 </button>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+    <header>
+        <nav class="nav">
+          <a href="/" class="logo">logo</a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">blog</a>
+            <button>
+                <a class="login" href="">Login</a>
+            </button>
+          </div>
+        </nav>
+      </header>
 
     <div class="hero-section">
 

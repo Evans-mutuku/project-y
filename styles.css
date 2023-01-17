@@ -1,54 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Raleway;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+header {
+  background-color: #0c2344;
+  padding: 1rem 3rem;
 }
 
-header{
-    background-color: #0c2344;
-    padding: 2rem 3rem;
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo > h1{
-    color: white;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-    gap: 3;
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  padding-left: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-a:hover {
-    text-decoration: none;
-    color: rgb(235, 154, 154);
+.nav__link {
+  position: fixed;
+  color: white;
 }
 
-.nav-links > button{
-    padding: 9px 29px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 9999px;
-    cursor: pointer;
+.nav__link a {
+  display: block;
+  text-align: center;
+  color: white;
 }
 
-.nav-links > button:hover{
-    color: rgb(235, 154, 154);
-    border: 1px solid rgb(235, 154, 154);
+.nav__link a:hover {
+  color: rgb(235, 154, 154);
+}
+
+.hide {
+  display: none;
+}
+
+.nav__link > button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.nav__link > button:hover {
+  color: rgb(235, 154, 154);
+  border: 1px solid rgb(235, 154, 154);
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
