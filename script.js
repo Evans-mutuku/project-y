@@ -42,3 +42,11 @@ function updateData(c){
     document.getElementById(c).querySelector(".data").querySelector(".Task").innerHTML = updatedTask;
     document.getElementById(c).querySelector(".data").querySelector(".desc").innerHTML = updatedDesc;
 }
+
+// Reading the data from the database
+var data;
+firebase.database().ref('TaskList').on('value', function(snapshot){
+    data = snapshot.val();
+    console.log("This is data speaking from open");
+    console.log(data);
+});
