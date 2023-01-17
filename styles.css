@@ -62,13 +62,15 @@ a {
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
+
 }
 
 .hamburger .line {
+    background-color: white;
   display: block;
   width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
+  height: 3px;
+  margin-bottom: 9px;
 }
 
 @media screen and (min-width: 600px) {
