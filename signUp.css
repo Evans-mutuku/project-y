@@ -38,10 +38,8 @@ h1 {
     background-color: white;
     padding: 7%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* horizontal align */
     width: 40vw;
-    margin-left: 30vw;
-    /* vertical align */
+    margin: auto;
     height: 70vh;
     margin-top: 15vh;
   }
