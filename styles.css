@@ -65,6 +65,64 @@ a {
   display: none;
 }
 
+/******************************************************/
+/************** Hero Section Styles *******************/
+/******************************************************/
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.hero-section_left{
+  /* background-color: red; */
+}
+
+.hero-section_left > button{
+  background-color: #01a2a8;
+  padding: 0.8rem 1.5rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.hero-section_left > h1{
+  /* background-color: #01a2a8;
+   */
+   margin-top: 2rem;
+   margin-bottom: 1.5rem;
+   font-size: 2rem;
+}
+.hero-section_left > p{
+  width: 60%;
+  line-height: 1.9rem;
+}
+
+.get-started{
+  margin-top: 2.5rem;
+  display: flex ;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px) {
   .nav__link {
     display: block;
