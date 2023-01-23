@@ -110,6 +110,23 @@ a {
   gap: 3rem;
 }
 
+.get-started > a > button, .how-works > button{
+  background-color: #01a2a8;
+  padding: 0.8rem 1.5rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.get-started > a > button:hover, .how-works > button:hover {
+  background-color: white;
+  color: #01a2a8;
+  font-weight: 600;
+  border: 1px solid #01a2a8;
+}
+
 
 
 
