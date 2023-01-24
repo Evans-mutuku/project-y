@@ -142,6 +142,7 @@ a {
  width: 90%;
  margin: auto;
  margin-top: 3rem;
+ margin-bottom: 3rem;
 }
 
 .main-content > h1{
@@ -155,8 +156,38 @@ a {
   margin-top: 1rem;
 }
 
+.main-content_cards{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-content_cards > div{
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+  width: 20%;
+  /* background-color: red; */
+}
 
+.main-content_cards > div > h1{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.main-content_cards > div > p{
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.main-content_cards > div > .fa-home, .fa-mobile, .fa-envelope-open{
+ font-size: 2rem;
+ margin: auto;
+ color: #01a2a8;
+ margin-bottom: 1rem;
+ display: flex;
+ justify-content: center;
+}
 
 
 
