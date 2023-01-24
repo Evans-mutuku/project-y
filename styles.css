@@ -75,11 +75,11 @@ a {
   align-items: center;
   width: 90%;
   margin: auto;
-  margin-top: 3rem;
+  height: 70vh;
 }
 
 .hero-section_left{
-  /* background-color: red; */
+  /* background-color: yellow; */
 }
 
 .hero-section_left > button{
@@ -127,9 +127,33 @@ a {
   border: 1px solid #01a2a8;
 }
 
+.hero-section_right{
+  width: 50%;
+}
+
+.hero-section_right img{
+  width: 30vw;
+  height: 60vh;
+
+}
 
 
+.main-content{
+ width: 90%;
+ margin: auto;
+ margin-top: 3rem;
+}
 
+.main-content > h1{
+  text-align: center;
+  color: #01a2a8;
+  font-weight: bold;
+}
+
+.main-content > p{
+  text-align: center;
+  margin-top: 1rem;
+}
 
 
 
