@@ -1,91 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  /* Styling navbar */
-  header {
-    background-color: #01a2a8;
-    /* padding: 1rem 2rem; */
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    /* text-transform: uppercase; */
-  }
-  
-  /* nav styles */
-  
-  .nav {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: white;
-  }
-  
-  .nav__link {
-    position: fixed;
-    width: 100%;
-    top: 5.5rem;
-    background-color: #01a2a8;
-  }
-  
-  .nav__link a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .nav__link a:hover {
-    color: #0c2344;
-  }
-  
-  .hide {
-    display: none;
-  }
-  /* When the screen is resize */
-  @media screen and (min-width: 600px) {
-    .nav__link {
-      display: block;
-      position: static;
-      width: auto;
-      margin-right: 20px;
-      background: none;
-    }
-  
-    .nav__link a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-    .contact-us{
-      grid-template-columns:1fr;
-      padding-left:0;
-    }
-  }
-  
-  body {
+ body {
     width:100%;
     min-height:100vh;
   }
@@ -115,6 +28,7 @@
   .contact-us{
     max-width:750px;
     display:grid;
+    margin-top: 3rem;
     grid-template-columns:repeat(2 1fr);
     justify-content: center;
     box-shadow:0px 0px 19px 5px rgba(0, 0, 0, 0.19);
@@ -126,6 +40,11 @@
     position: relative;
     padding-bottom:10px;
     margin-bottom:10px;
+    margin-top: 20px;
+  }
+
+  .right > h2{
+    margin-bottom: 20px;
   }
   .field{
     width:90%;
@@ -140,13 +59,16 @@
   .field:hover{
     background-color:rgba(0,0,0,0.1);
   }
-  .field focus{
+  .field:focus{
     background-color:#fff;
     border:2px solid rgba(30,80,250,0,0.47);
   }
   /* Styling text area part */
+  textarea{
+    height: 150px;
+  }
    .field area{
-    min: height 150px;
+    min-height: 4000px;
   }
   /* Styling submit button */
   .submit{
