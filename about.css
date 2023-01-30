@@ -1,0 +1,51 @@
+#about-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 13%;
+}
+
+.about{
+    width: 57%;
+}
+.about ul li{
+    display: flex;
+    align-items: center;
+}
+.about h1{
+    color: #ab1449;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+.about p{
+    color: #444;
+    line-height: 26px;
+    font-size: 15px;
+}
+.contact-us{
+    margin-top: 2.5rem;
+    display: flex ;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .contact-us > a > button{
+    background-color: #01a2a8;
+    padding: 0.8rem 1.5rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .contact-us > a > button:hover{
+    background-color: white;
+    color: #01a2a8;
+    font-weight: 600;
+    border: 1px solid #01a2a8;
+  }
+
