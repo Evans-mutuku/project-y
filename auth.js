@@ -87,6 +87,7 @@ createacctbtn.addEventListener("click", function () {
         const errorMessage = error.message;
         // ..
         window.alert("Error occurred. Try again.");
+        window.alert(errorMessage);
       });
   }
 });
