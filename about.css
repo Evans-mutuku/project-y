@@ -35,7 +35,7 @@
     margin-bottom: 5px;
 }
 
-.about-left {
+.about-left img {
     border-radius: 50%;
 }
 
@@ -67,4 +67,21 @@
     color: #01a2a8;
     font-weight: 600;
     border: 1px solid #01a2a8;
+}
+
+@media only screen and (max-width: 767px) {
+    #about-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left img {
+        margin-top: 6rem;
+    }
+    .about {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        box-sizing: content-box;
+        justify-content: space-evenly;
+    }
 }
