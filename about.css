@@ -1,4 +1,4 @@
-#about-section{
+#about-section {
     width: 100%;
     height: auto;
     display: flex;
@@ -7,31 +7,54 @@
     padding: 80px 13%;
 }
 
-.about{
-    width: 57%;
+#about-section::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    filter: blur(90px);
+    height: 100%;
+    background: url(images/plp-logo.png) no-repeat center;
+    background-size: cover;
 }
-.about ul li{
+
+.about {
+    width: 57%;
+    margin-top: 50px;
+}
+
+.about ul li {
     display: flex;
     align-items: center;
 }
-.about h1{
+
+.about h1 {
     color: #ab1449;
     font-size: 37px;
     margin-bottom: 5px;
 }
-.about p{
+
+.about-left img {
+    border-radius: 50%;
+}
+
+.about p {
     color: #444;
     line-height: 26px;
     font-size: 15px;
+    font-weight: bold;
 }
-.contact-us{
+
+.contact-us {
     margin-top: 2.5rem;
-    display: flex ;
+    display: flex;
     align-items: center;
     gap: 3rem;
-  }
-  
-  .contact-us > a > button{
+}
+
+.contact-us>a>button {
     background-color: #01a2a8;
     padding: 0.8rem 1.5rem;
     border-radius: 9999px;
@@ -39,13 +62,28 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
-  }
-  
+}
 
-  .contact-us > a > button:hover{
+.contact-us>a>button:hover {
     background-color: white;
     color: #01a2a8;
     font-weight: 600;
     border: 1px solid #01a2a8;
-  }
+}
 
+@media only screen and (max-width: 767px) {
+    #about-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left img {
+        margin-top: 6rem;
+    }
+    .about {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        box-sizing: content-box;
+        justify-content: space-evenly;
+    }
+}
