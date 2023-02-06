@@ -219,11 +219,12 @@ a {
 }
 
 .card {
-    margin: 2rem;
+    /* margin: 2rem; */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: auto;
+    /* width: auto; */
+    width: 30%;
     margin-bottom: 50px;
 }
 
