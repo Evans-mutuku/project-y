@@ -9,6 +9,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+console.log(firebaseConfig);
 
 // Listening to load event on window
 // Reading the number of tasks stored in the database

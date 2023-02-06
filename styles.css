@@ -178,13 +178,13 @@ a {
     margin-bottom: 3rem;
 }
 
-.main-content>h1 {
+.main-content > h1 {
     text-align: center;
     color: #01a2a8;
     font-weight: bold;
 }
 
-.main-content>p {
+.main-content > p {
     text-align: center;
     margin-top: 1rem;
 }
@@ -193,6 +193,7 @@ a {
     margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .main-content_cards>div>h1 {
@@ -218,6 +219,7 @@ a {
 }
 
 .card {
+    margin: 2rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
