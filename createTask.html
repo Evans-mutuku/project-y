@@ -37,36 +37,31 @@
     </header>
 
 
-    <div class="addTaskContainer">
+    <div class="left-right-div-container">
         <div class="left-div">
-            <form class="form" onsubmit="storeTask(event)" id="createTask">
-                <div class="task-div" id="taskdiv">
+            <form class="form" onsubmit = "storeTask(event)" id = "createTask">
+                <div class = "task-div" id="taskdiv">
                     <label for="Task" class="label" id="tasklabel">Task</label>
-                    <input type="text" name="task" id="task" class="input-field" placeholder="Enter task" required>
+                    <input type="text" name="task" id="task" class="input-field" placeholder = "Enter task" required>
                 </div>
-                <div class="desc-div" id="descdiv">
+                <div class = "desc-div" id = "descdiv">
                     <label for="Desc" class="label" id="desclabel">Description</label>
-                    <input type="text" name="desc" id="desc" class="input-field" placeholder="Description" required>
+                    <input type="text" name="desc" id="desc" class="input-field" placeholder = "Description" required>
                 </div>
-                <div class="time-div" id="timediv">
-                    <label for="Desc" class="label" id="desclabel">Completion Date</label>
-                    <input type="date" name="time" id="time" class="input-field" placeholder="Choose Date" required>
-                </div>
-                <div id="form-btns">
-                    <button type="submit" class="button add" id="addTask">󠀫󠀫<i class="fas fa-plus"></i> ADD TASK</button>
-                </div>
+                <div id = "form-btns">
+                    <button type="submit" class="button add" id = "addTask" >󠀫󠀫<i class="fas fa-plus"></i> ADD TASK</button>
+                </div>    
             </form>
         </div>
-
-        <div class="right-div" id="right-div">
+    
+        <div class="right-div" id = "right-div">
             <div class="show-delete" id="tasks-header">
-                <h1><i class="fas fa-tasks"></i> My TASKS</h1>
-                <button class="button showAll" id="showALL" onclick="showAll()">SHOW ALL</button>
-                <button class="button deleteAll" id="deleteALL" onclick="deleteAll()">DELETE ALL</button>
+                <h1 ><i class="fas fa-tasks"></i> My TASKS</h1>
+                <button class="button showAll" id="showALL" onclick = "showAll()">SHOW ALL</button>
+                <button class="button deleteAll" id="deleteALL" onclick = "deleteAll()">DELETE ALL</button>
             </div>
         </div>
     </div>
-
 
 
     <script>
@@ -83,7 +78,7 @@
             document.getElementById("desclabel").style.color = " #aaaaaa";
         });
     </script>
-    <script type="module" src="./createTask.js"></script>
+    <script src="./createTask.js"></script> 
 
 </body>
 

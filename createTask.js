@@ -8,54 +8,8 @@ const firebaseConfig = {
   measurementId: "G-9VR0K26NHG",
 };
 
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-console.log(firebaseConfig);
-
-// Listening to load event on window
-// Reading the number of tasks stored in the database
-
-// var totalItems;
-// var maxCode;
-// var code;
-
-// // function invoked by add btn
-// // function to store the task entered by the user in the database
-// // read and clear the fields->store the task in DB with a unique code->update the total tasks in DB->
-// // show the task under taskbar in form of a card
-
-// function storeTask(event) {
-//   event.preventDefault();
-//   const task = document.getElementById("task").value;
-//   const desc = document.getElementById("desc").value;
-//   const taskTime = document.getElementById("time").value;
-
-//   document.getElementById("task").value = "";
-//   document.getElementById("desc").value = "";
-//   document.getElementById("time").value = "";
-
-//   code = totalItems;
-//   if (totalItems < maxCode) {
-//     code = maxCode + 1;
-//   }
-
-//   firebase
-//     .database()
-//     .ref("TaskList/" + code)
-//     .set({
-//       task: task,
-//       desc: desc,
-//       taskTime: taskTime,
-//       status: "pending",
-//     });
-// }
-
-// // function invoked by show all btn
-// // if no tasks available then display "No pending tasks"
-// // Remove any tasks if displayed inside the task bar
-// // read the data from the DB and display in form of cards
-// // adjust the color and disabled attribute of the buttons based on whether the task is completed or not
-
-// function showAll() {}
 
 // Listening to load event on window
 // Reading the number of tasks stored in the database
