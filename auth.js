@@ -115,6 +115,8 @@ submitButton.addEventListener("click", function () {
     });
 });
 
+// Navigate through the login / Register components
+
 signupButton.addEventListener("click", () => {
   main.style.display = "none";
   createacct.style.display = "block";
