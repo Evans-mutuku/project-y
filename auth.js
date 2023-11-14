@@ -23,7 +23,7 @@ const database = getDatabase(app);
 const auth = getAuth();
 
 const submitButton = document.getElementById("submit");
-const signupButton = document.getElementById("sign-up");
+
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const main = document.getElementById("main");
@@ -35,9 +35,11 @@ const signupPasswordIn = document.getElementById("password-signup");
 const confirmSignUpPasswordIn = document.getElementById(
   "confirm-password-signup"
 );
-const createacctbtn = document.getElementById("create-acct-btn");
 
+// Start with this
+const createacctbtn = document.getElementById("create-acct-btn");
 const returnBtn = document.getElementById("return-btn");
+const signupButton = document.getElementById("sign-up");
 
 var email,
   password,
